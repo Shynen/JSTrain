@@ -1,0 +1,92 @@
+etape 1
+---
+
+Dans cette première étape, je vais vous demander d'afficher un menu à notre utilisateur, comportant les 4 modes que nous lui proposons :
+
+Addition
+
+Multiplication
+
+Soustraction
+
+Division
+
+Nous utiliserons ce menu pour récupérer un nombre : 1, 2, 3 ou 4, qui nous permettra de savoir ce que l'utilisateur souhaite faire. Nous stockerons ce choix dans une variable choix.
+
+
+Attention : vérifiez bien que l'utilisateur entre un nombre, et que ce dernier est le nombre 1, 2, 3 ou 4.
+
+Astuce : Je vous recommande d'utiliser une boucle do...while. Si vous souhaitez faire des retours à la ligne pour afficher le menu, il faudra utiliser le texte \n. Par exemple : "Que souhaitez-vous faire ?\n\n 1 - Addition\n".
+
+
+--------------------------------------
+----------------------------------------------------------------
+
+
+Etape 2 : Demander deux nombres à utiliser
+---
+
+Dans cette deuxième étape, je vous invite à demander deux nombres à utiliser lors de vos calculs. Ces deux nombres seront stockés dans deux variables : premierNombre et deuxiemeNombre.
+
+Attention : Vérifiez bien qu'il s'agit de deux nombres, nous ne sommes pas à l'abri d'un utilisateur qui rentrerait du texte !
+
+Astuce : Pour vérifier si une valeur est bien un nombre, vous pouvez utiliser une boucle do...while, et utiliser la fonction isNaN(variable) qui renvoie true si la variable n'est pas un nombre.
+
+
+---------------------------------------
+----------------------------------------------------------------
+
+Etape 3 : Créer les 4 fonctions
+---
+
+Il est maintenant temps de créer nos 4 fonctions :
+
+addition(nombreA, nombreB)
+
+multiplication(nombreA, nombreB)
+
+soustraction(nombreA, nombreB)
+
+division(nombreA, nombreB)
+
+----------------------------------------------------
+---------------------------------------------------------------------------------------
+
+Etape 4 : Appeler la fonction à utiliser
+------
+Nous avons maintenant le mode souhaité par l'utilisateur, nos modes et deux nombres. Il ne nous reste plus qu'à appeler la bonne fonction.
+
+Ce que vous devez faire :
+
+Utiliser un switch pour vérifier plusieurs cas : 1, 2, 3 et 4
+
+Dans chaque cas, appeler la fonction souhaitée. Par exemple, si choix vaut 1, nous appelons la fonction addition. Voici un rappel de chaque nombre lié à sa fonction :
+
+1 : addition()
+2 : multiplication()
+3: soustraction()
+4: division ()
+
+Stocker la valeur de retour de notre fonction dans une variable resultat.
+
+----------------------------------------------------
+---------------------------------------------------------------------------------------
+
+Etape 5 : Afficher le résultat
+
+Dans cette étape, il ne nous reste qu'une seule chose à faire : afficher le résultat.
+
+Je n'ai pas de conseil particulier ici, si ce n'est de bien penser à afficher le résultat dans une boîte de dialogue et le faire après votre switch. N'oubliez pas : nous ne voulons pas nous répéter dans notre code !
+
+----------------------------------------------------
+---------------------------------------------------------------------------------------
+
+Etape 6 : Gérer les exceptions
+
+Nous voici dans la dernière étape. Notre calculatrice fonctionne déjà très bien, toutefois, il faut que nous pensions aux erreurs qui peuvent être rencontrées. Pour ceci, nous allons créer des exceptions.
+
+Je voudrai que vous créiez deux exceptions :
+
+Une dans le default de votre switch, disant qu'une erreur est survenue dans une alerte. Nous ne sommes jamais à l'abri d'un bug.
+
+Une dans la fonction division(), lorsque nombreB vaut 0. En effet, il est interdit de diviser par 0 ! C'est une règle fondamentale des mathématiques ! Nous devons donc créer une exception "Impossible de diviser par 0.".
